@@ -1,5 +1,4 @@
 let um = $("div");
-let link = {};
 let imgs = $("#imagem");
 let texto = $("#texto");
 let ddata = $("data");

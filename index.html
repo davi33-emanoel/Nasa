@@ -4,32 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <script defer src="./index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Nasa</title>
   </head>
   <body>
-    <div class="body">
-      <header class="header">
-        <h1>Nasa</h1>
-        <h2>Busque a imagem Astronomica do dia no campo abaixo</h2>
-      </header>
-      <div class="buscaArea">
-        <input class="BuscaData" type="date" in="1995-06-16" id="dataResult" title="Data minina: 1995-06-16"/>
-        <button class="botao" id="dataValor" title="Buscar imagem">
-          <img class="img-default" src="./assets/rocket.png" />
-          <img class="img-hover" src="./assets/fast.png" />
-        </button>
+      <h1>Astronomy Picture of the Day </h1>
+    <div class="main">
+      <p>Data minina 1995-06-16</p>
+      <div class="botaao">
+      <input type="date" min="1995-06-16" name="data" id="data" />
+      <button id="bts">Clica AQUI</button>
+        </div>
+      <div class="container">
+        <div id="imagem"></div>
       </div>
-      <div class="imagensETexto">
-       <a target="_blank" id="imagemTamanhoReal"><img class="imagemResultado" id="imagem"/>
-        <iframe autoplay-="true" preload="auto" controls="true" id="video" class="esconde"></iframe></a>
-        <p class="texto-eplicativo" id="texto"></p>
-      </div>
-      <div class="footer">
-        <p>@ Davi Emannoel 2022</p>
-      </div>
+      <div id="texto"></div>
     </div>
+    <footer>@Davi Emannoel</footer>
   </body>
 </html>
